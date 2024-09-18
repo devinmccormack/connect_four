@@ -73,7 +73,6 @@ RSpec.describe Board do
       expect(board.check_winner('X')).to be true
     end
 
-    describe '#check_winner' do
     it 'returns false if there is no win' do
       board = Board.new
       board.drop_piece(0, 'X')
